@@ -24,6 +24,11 @@ if answer.lower().strip() == "minor":
     answer = input("Great!  I hope the Cardinals had a good game and everyone played well. Who was your starting pitcher today? ")
     if answer.lower().strip() == "jackson" or "harrison" or "levi" or "sam":
          answer = input("Nice!  Hopefully (answer) brought his A game today.  How many pitches did (answer) throw? ")
+         if answer > "60" input("He threw over 45 pitches and will be unavailable to pitch later this week. ")
+
+        else input("Great!  He will be available later in the week if needed. ")
+
+
 
 elif answer.lower().strip() == "major":
     answer = input("Great!  I hope the Rockies had a good game and everyone played well.  Who was your starting pitcher today? ")
