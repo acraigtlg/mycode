@@ -1,19 +1,23 @@
 #! usr/bin/env python3
 
-pitch_stats = [{'pitcher': {'name': 'jackson', 'num_pitches': 45}}]
+#The goal of my project is to create a tool intended to be used by Little League coaches to track pitches thrown by their players to promote player safety.
+
+
+
+#pitch_stats = [{'pitcher': {'name': 'jackson', 'num_pitches': 45}}]
 
 #pitcher name
 
 #number of pitches
 
 
-pitches = {'name': 'jackson', 'num_pitches': 45}
+#pitches = {'name': 'jackson', 'num_pitches': 45}
 
-name = input('pitcher.')
-throws = input('Enter number of pitches. ')
-pitches['name'] = name
-pitches['num_pitches'] = throws
-print(pitches)
+#name = input('pitcher.')
+#throws = input('Enter number of pitches. ')
+#pitches['name'] = name
+#pitches['num_pitches'] = throws
+#print(pitches)
 
 #Initial prompt
 
@@ -24,7 +28,19 @@ if answer.lower().strip() == "minor":
     answer = input("Great!  I hope the Cardinals had a good game and everyone played well. Who was your starting pitcher today? ")
     if answer.lower().strip() == "jackson" or "harrison" or "levi" or "sam":
          answer = input("Nice!  Hopefully (answer) brought his A game today.  How many pitches did (answer) throw? ")
-         if answer > "60" input("He threw over 45 pitches and will be unavailable to pitch later this week. ")
+        if answer <= "60":
+            answer = input("Perfect, he will be available to pitch in your next game. "
+        
+                    
+        elif answer > "60":
+            input("He threw over 60 pitches and may be unavailable to pitch later this week. How many days until your next game? ")
+                if answer >= "3":
+                answer = input("Great, with enough rest and stretching, he will be available to pitch in your next game. ")
+
+                elif answer < "3":
+                answer = input("He will be unavaiable to pitch until having adequate rest. ")
+
+
 
         else input("Great!  He will be available later in the week if needed. ")
 
