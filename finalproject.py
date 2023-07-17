@@ -24,70 +24,151 @@
 answer = input("Hey Coach Aaron, Welcome Back!!!  Are you here to log pitches for your Minor or Major league team today? ")
 if answer.lower().strip() == "minor":
     answer = input("Great! I hope the Cardinals had a good game and everyone had fun, tried their hardest, and played well. Who was your starting pitcher today? ")
+
     if answer.lower().strip() == "jackson" or "harrison" or "levi" or "sam":
          answer = input("Nice!  Hopefully he brought his A game today.  How many pitches did he throw? ")
+
 #how can i take the answer from who pitched and input the pitchers name into the following statements instead of using "he"
     if answer <= "60":
-        answer = input("Perfect, he will be available to pitch in your next game. Did another player make a pitching apperance ? ")                    
+        answer = input("Perfect, he will be available to pitch in your next game. Did another player make a pitching apperance ? ")
+
     elif answer > "60":
         input("He threw over 60 pitches and may be unavailable to pitch later this week. How many days until your next game? ")
+
         if answer >= "3":
-                answer = input("Great, with enough rest and stretching as long as he feels fine, he will be available to pitch in your next game.  Did another pitcher make a pitching appearnce? ")
+            answer = input("Great, with enough rest and stretching as long as he feels fine, he will be available to pitch in your next game.  Did another pitcher make a pitching appearnce? ")
+
         elif answer < "3":
             answer = input("He will be unavaiable to pitch until having adequate rest.  Did another player make a pitching apperance ? ")
-                if answer == "yes":
-                    answer = input ("Ok, who came in to relieve to the starting pitcher? ")
-                        if answer.lower().strip() == "jackson" or "harrison" or "levi" or "sam":
-                            answer = input("Nice!  Hopefully he brought his A game today.  How many pitches did he throw? ")
-                            if answer <= "60":
-                                answer = input("Perfect, he will be available to pitch in your next game. ")                    
-                            elif answer > "60":
-                                input("He threw over 60 pitches and may be unavailable to pitch later this week. How many days until your next game? ")
-                                    if answer >= "3":
-                                        answer = input("Great, with enough rest and stretching, he will be available to pitch in your next game.  Did another pitcher make a pitching appearnce? ")
-                                    elif answer < "3":
-                                        answer = input("He will be unavaiable to pitch until having adequate rest.  Did another player make a pitching apperance ? ")
+
+            if answer == "yes":
+                answer = input ("Ok, who came in to relieve to the starting pitcher? ")
+
+                if answer.lower().strip() == "jackson" or "harrison" or "levi" or "sam":
+                    answer = input("Nice!  Hopefully he brought his A game today.  How many pitches did he throw? ")
+ 
+                    if answer <= "60":
+                        answer = input("Perfect, he will be available to pitch in your next game. ")              
+
+                    elif answer > "60":
+                        input("He threw over 60 pitches and may be unavailable to pitch later this week. How many days until your next game? ")
+
+                        if answer >= "3":
+                            answer = input("Great, with enough rest and stretching, he will be available to pitch in your next game.  Did another pitcher make a pitching appearnce? ")
+
+                        elif answer < "3":
+                            answer = input("He will be unavaiable to pitch until having adequate rest.  Did another player make a pitching apperance ? ")
+
+                            if answer == "yes":
+                                answer = input ("Ok, who came in to close out the game? ")
+
+                                if answer.lower().strip() == "jackson" or "harrison" or "levi" or "sam":
+                                    answer = input("Nice!  Hopefully he brought his A game today.  How many pitches did he throw? ")
+
+                                    if answer <= "60":
+                                        answer = input("Perfect, he will be available to pitch in your next game. ")
+                                                
+                                    elif answer > "60":
+                                        input("He threw over 60 pitches and may be unavailable to pitch later this week. How many days until your next game? ")
+
+                                        if answer >= "3":
+                                            answer = input("Great, with enough rest and stretching, he will be available to pitch in your next game.  Did another player make a pitching appearnce? ")
+
+                                        elif answer < "3":
+                                            answer = input("He will be unavaiable to pitch until having adequate rest.  Did another player make a pitching apperance ? ")
+
                                             if answer == "yes":
                                                 answer = input ("Ok, who came in to close out the game? ")
-                                                    if answer.lower().strip() == "jackson" or "harrison" or "levi" or "sam":
-                                                        answer = input("Nice!  Hopefully he brought his A game today.  How many pitches did he throw? ")
-                                                            if answer <= "60":
-                                                                answer = input("Perfect, he will be available to pitch in your next game. ")                    
-                                                            elif answer > "60":
-                                                                input("He threw over 60 pitches and may be unavailable to pitch later this week. How many days until your next game? ")
-                                                                    if answer >= "3":
-                                                                        answer = input("Great, with enough rest and stretching, he will be available to pitch in your next game.  Did another player make a pitching appearnce? ")
-                                                                    elif answer < "3":
-                                                                        answer = input("He will be unavaiable to pitch until having adequate rest.  Did another player make a pitching apperance ? ")
-                                                                        if answer == "yes":
-                                                                            answer = input ("Ok, who came in to close out the game? ")
-                                                                                if answer.lower().strip() == "jackson" or "harrison" or "levi" or "sam":
-                                                                                    answer = input("Nice!  Hopefully he brought his A game today.  How many pitches did he throw? ")
-                                                                                        if answer <= "60":
-                                                                                            answer = input("Perfect, he will be available to pitch in your next game. ")                    
-                                                                                        elif answer > "60":
-                                                                                            input("He threw over 60 pitches and may be unavailable to pitch later this week. How many days until your next game? ")
-                                                                                                if answer >= "3":
-                                                                                                   answer = input("Great, with enough rest and stretching, he will be available to pitch in your next game.  Did another player make a pitching appearnce? ")
-                                                                                                elif answer < "3":
-                                                                                                    answer = input("He will be unavaiable to pitch until having adequate rest.  Did another player make a pitching apperance ? ")
 
+                                                if answer.lower().strip() == "jackson" or "harrison" or "levi" or "sam":
+                                                    answer = input("Nice!  Hopefully he brought his A game today.  How many pitches did he throw? ")
+
+                                                    if answer <= "60":
+                                                        answer = input("Perfect, he will be available to pitch in your next game. ")
+                                                                
+                                                    elif answer > "60":
+                                                        input("He threw over 60 pitches and may be unavailable to pitch later this week. How many days until your next game? ")
+
+                                                        if answer >= "3":
+                                                            answer = input("Great, with enough rest and stretching, he will be available to pitch in your next game.  Did another player make a pitching appearnce? ")
+
+                                                        elif answer < "3":
+                                                            answer = input("He will be unavaiable to pitch until having adequate rest.  Did another player make a pitching apperance ? ")
 
 elif answer.lower().strip() == "major":
     answer = input("Great!  I hope the Rockies had a good game and everyone played well.  Who was your starting pitcher today? ")
+
     if answer.lower().strip() == "zack" or "adam" or "miles" or "caleb":
-        answer = input("Nice!  Hopefully he brought his A game today.  How many pitches did he throw? ")
+           answer = input("Nice!  Hopefully he brought his A game today.  How many pitches did he throw? ")
+
+#how can i take the answer from who pitched and input the pitchers name into the following statements instead of using "he"
     if answer <= "75":
-            answer = input("Perfect, he will be available to pitch in your next game.  Did another player make a pitching apperance ? ")   
-            if answer.lower().strip() == "zack" or "adam" or "miles" or "caleb":
-                answer = input("Nice!  Hopefully he brought his A game today.  How many pitches did he throw? ")       
+        answer = input("Perfect, he will be available to pitch in your next game. Did another player make a pitching apperance ? ")
+
     elif answer > "75":
-            input("He threw over 75 pitches and may be unavailable to pitch later this week. How many days until your next game? ")
-    if answer >= "3":
-                answer = input("Great, with enough rest and stretching, he will be available to pitch in your next game. ")
-    elif answer < "3":
-                answer = input("He will be unavaiable to pitch until having adequate rest. ")
-    
+        input("He threw over 75 pitches and may be unavailable to pitch later this week. How many days until your next game? ")
+
+        if answer >= "3":
+            answer = input("Great, with enough rest and stretching as long as he feels fine, he will be available to pitch in your next game.  Did another pitcher make a pitching appearnce? ")
+
+        elif answer < "3":
+            answer = input("He will be unavaiable to pitch until having adequate rest.  Did another player make a pitching apperance ? ")
+
+            if answer == "yes":
+                answer = input ("Ok, who came in to relieve to the starting pitcher? ")
+
+                if answer.lower().strip() == "zack" or "adam" or "miles" or "caleb":
+                    answer = input("Nice!  Hopefully he brought his A game today.  How many pitches did he throw? ")
+ 
+                    if answer <= "75":
+                        answer = input("Perfect, he will be available to pitch in your next game. ")              
+
+                    elif answer > "75":
+                        input("He threw over 75 pitches and may be unavailable to pitch later this week. How many days until your next game? ")
+
+                        if answer >= "3":
+                            answer = input("Great, with enough rest and stretching, he will be available to pitch in your next game.  Did another pitcher make a pitching appearnce? ")
+
+                        elif answer < "3":
+                            answer = input("He will be unavaiable to pitch until having adequate rest.  Did another player make a pitching apperance ? ")
+
+                            if answer == "yes":
+                                answer = input ("Ok, who came in to close out the game? ")
+
+                                if answer.lower().strip() == "zack" or "adam" or "miles" or "caleb":
+                                    answer = input("Nice!  Hopefully he brought his A game today.  How many pitches did he throw? ")
+
+                                    if answer <= "75":
+                                        answer = input("Perfect, he will be available to pitch in your next game. ")
+                                                
+                                    elif answer > "75":
+                                        input("He threw over 75 pitches and may be unavailable to pitch later this week. How many days until your next game? ")
+
+                                        if answer >= "3":
+                                            answer = input("Great, with enough rest and stretching, he will be available to pitch in your next game.  Did another player make a pitching appearnce? ")
+
+                                        elif answer < "3":
+                                            answer = input("He will be unavaiable to pitch until having adequate rest.  Did another player make a pitching apperance ? ")
+
+                                            if answer == "yes":
+                                                answer = input ("Ok, who came in to close out the game? ")
+
+                                                if answer.lower().strip() == "zack" or "adam" or "miles" or "caleb":
+                                                    answer = input("Nice!  Hopefully he brought his A game today.  How many pitches did he throw? ")
+
+                                                    if answer <= "75":
+                                                        answer = input("Perfect, he will be available to pitch in your next game. ")
+                                                                
+                                                    elif answer > "75":
+                                                        input("He threw over 75 pitches and may be unavailable to pitch later this week. How many days until your next game? ")
+
+                                                        if answer >= "3":
+                                                            answer = input("Great, with enough rest and stretching, he will be available to pitch in your next game.  Did another player make a pitching appearnce? ")
+
+                                                        elif answer < "3":
+                                                            answer = input("He will be unavaiable to pitch until having adequate rest.  Did another player make a pitching apperance ? ")
+
+
 
 
 #else answer.lower().strip() != minor or major:
